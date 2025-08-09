@@ -15,6 +15,6 @@ int main() {
         getline(cin, input);
 
         vector<string> inputParsed = parser(input);
-        cout << Executecommand(inputParsed) << endl;
+        cout << executeCommand(inputParsed) << endl;
     }
 }
