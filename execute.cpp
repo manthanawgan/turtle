@@ -5,7 +5,12 @@
 using namespace std;
 
 string executeCommand(vector<string> input) {
-    if (input.empty()) return "";
+    if (input[0] == "cd"){
+        if(input.size() == 1) return "path not provided. \\n";
+        changeDir(input[1]);
+        return "";
+    }
+    
 
     processID_t processID = fork();
     if (proessID == 0) {
@@ -29,5 +34,5 @@ string executeCommand(vector<string> input) {
         perror("fork failed");
     }
     return "";
-    
+
 }
