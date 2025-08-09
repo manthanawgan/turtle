@@ -11,6 +11,6 @@ simple shell implemented in C++ that replicates basic Unix shell behavior. It al
 - Custom prompt with current working directory
 
 ## What i'll be adding
--Background execution (&)
--I/O redirection (>, >>)
--Command piping (|)
+- Background execution (&)
+- I/O redirection (>, >>)
+- Command piping (|)
